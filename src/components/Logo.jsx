@@ -9,8 +9,8 @@ export default function Logo({ className = '', size = 'md', showText = false }) 
         src={LOGO_SRC}
         alt="MR NIRMAN Infra logo — construction, urban service apartments, green living in Hyderabad and Bangalore"
         className="logo__img"
-        width={200}
-        height={80}
+        width={280}
+        height={280}
         loading="eager"
         decoding="async"
         fetchPriority="high"

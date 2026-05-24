@@ -18,7 +18,6 @@ export default function About() {
           <div className="about__image-wrap">
             <div className="about__logo-card">
               <Logo size="lg" />
-              <p className="about__logo-tagline">{SITE.tagline}</p>
             </div>
             <div className="about__experience">
               <strong>12+</strong>
