@@ -1,5 +1,6 @@
 import { heroWords } from '../data/content'
 import { useRotatingText } from '../hooks/useRotatingText'
+import Logo from './Logo'
 import Icon from './Icon'
 import './Hero.css'
 
@@ -20,86 +21,88 @@ export default function Hero() {
         <div className="hero__text" data-reveal>
           <div className="hero__badge">
             <span className="hero__badge-dot" />
-            Chartered Accountant · Tax Experts
+            Construction &amp; Infrastructure Experts
           </div>
 
           <h1 className="hero__title">
-            Smart tax solutions for{' '}
+            Building{' '}
             <span className={`hero__title-accent hero__rotate ${visible ? 'hero__rotate--in' : 'hero__rotate--out'}`}>
               {word}
             </span>
           </h1>
 
           <p className="hero__description">
-            MR Tax delivers end-to-end tax consultation, compliance, and advisory—led by a
-            qualified Chartered Accountant. Trusted by individuals, startups, and enterprises
-            across India.
+            MR NIRMAN Infra delivers residential, commercial, and civil projects with quality
+            materials, skilled execution, and transparent timelines—trusted across Andhra Pradesh
+            and beyond.
           </p>
 
           <div className="hero__actions">
             <a href="#contact" className="btn btn--primary">
-              Get Free Consultation
+              Get Free Quote
               <Icon name="arrow" size={18} />
             </a>
-            <a href="#calculator" className="btn btn--secondary">
-              Try Tax Calculator
+            <a href="#services" className="btn btn--secondary">
+              Our Services
             </a>
           </div>
 
           <ul className="hero__trust">
             <li>
               <Icon name="check" size={18} />
-              ICAI Registered CA
+              Licensed &amp; Insured
             </li>
             <li>
               <Icon name="check" size={18} />
-              100% Confidential
+              Quality Materials
             </li>
             <li>
               <Icon name="check" size={18} />
-              Pan-India Service
+              On-Time Delivery
             </li>
           </ul>
         </div>
 
         <div className="hero__card" data-reveal>
+          <div className="hero__logo-wrap">
+            <Logo size="xl" />
+          </div>
           <div className="hero__card-inner">
             <div className="hero__card-header">
-              <span>Tax Savings Snapshot</span>
-              <span className="hero__card-tag hero__card-tag--live">Live FY 25–26</span>
+              <span>Project Snapshot</span>
+              <span className="hero__card-tag hero__card-tag--live">Active Builds</span>
             </div>
             <div className="hero__card-chart">
-              <div className="hero__bar" style={{ '--h': '45%' }} />
-              <div className="hero__bar" style={{ '--h': '65%' }} />
-              <div className="hero__bar hero__bar--highlight" style={{ '--h': '88%' }} />
-              <div className="hero__bar" style={{ '--h': '72%' }} />
               <div className="hero__bar" style={{ '--h': '55%' }} />
+              <div className="hero__bar" style={{ '--h': '72%' }} />
+              <div className="hero__bar hero__bar--highlight" style={{ '--h': '92%' }} />
+              <div className="hero__bar" style={{ '--h': '68%' }} />
+              <div className="hero__bar" style={{ '--h': '48%' }} />
             </div>
             <div className="hero__card-stats">
               <div>
-                <strong>₹4.2L+</strong>
-                <span>Avg. client savings*</span>
+                <strong>150+</strong>
+                <span>Projects delivered</span>
               </div>
               <div>
-                <strong>100%</strong>
-                <span>On-time filing</span>
+                <strong>98%</strong>
+                <span>Client satisfaction</span>
               </div>
             </div>
-            <p className="hero__card-note">*Illustrative; results vary by profile</p>
           </div>
 
           <div className="hero__float hero__float--1">
-            <Icon name="shield" size={22} />
+            <Icon name="building" size={22} />
             <div>
-              <strong>Audit Ready</strong>
-              <span>Full compliance</span>
+              <strong>Turnkey Builds</strong>
+              <span>End-to-end delivery</span>
             </div>
           </div>
           <div className="hero__float hero__float--2">
-            <Icon name="chart" size={22} />
+            <Icon name="shield" size={22} />
             <div>
-              <strong>Tax Optimized</strong>
-              <span>Strategic planning</span>
+              <strong>Quality Assured</strong>
+              <span>Structured QC</span>
             </div>
           </div>
         </div>

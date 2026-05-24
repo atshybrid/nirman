@@ -9,8 +9,8 @@ export default function Process() {
           <span className="section__eyebrow">How We Work</span>
           <h2 className="section__title">A clear, stress-free process</h2>
           <p className="section__subtitle">
-            From first call to filed return—we keep you informed at every step with documented
-            deliverables and realistic timelines.
+            From first site visit to final handover—we keep you informed at every step with clear
+            milestones and quality checks.
           </p>
         </header>
 

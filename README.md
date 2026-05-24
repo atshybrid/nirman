@@ -1,15 +1,11 @@
-# MR Tax — Tax Consultation Website
+# MR NIRMAN Infra — Construction Website
 
-A modern, responsive React website for **MR Tax**, a Chartered Accountant-led tax consultation and advisory firm.
+Responsive React website for **MR NIRMAN Infra** — construction, infrastructure, and turnkey building solutions.
 
-## Features
+## Contact
 
-- Fully responsive layout (mobile, tablet, desktop)
-- Professional navy & gold brand theme
-- Sections: Hero, Services, Stats, About, Process, Testimonials, FAQ, Contact
-- Smooth scroll navigation and mobile menu
-- Scroll-reveal animations (respects reduced motion)
-- Contact form (front-end demo—connect to your backend or email service)
+- **Email:** info@mrnirmaninfra.com
+- **Phone:** +91 79977 78977
 
 ## Quick Start
 
@@ -18,33 +14,22 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-## Build for Production
+## Build & Deploy
 
 ```bash
 npm run build
-npm run preview
 ```
 
-Deploy the `dist` folder to Netlify, Vercel, or any static host.
+Pushes to `main` auto-deploy to GitHub Pages via Actions.
 
-## Customize Your Business Details
+**Live site:** https://atshybrid.github.io/nirman/
 
-Update these files with your real information:
+(GitHub repo → Settings → Pages → Source: **GitHub Actions**)
 
-| File | What to change |
-|------|----------------|
-| `src/components/Contact.jsx` | Phone, email, office address |
-| `src/components/Footer.jsx` | Contact links |
-| `src/data/content.js` | Services, stats, testimonials, FAQs |
-| `src/components/About.jsx` | Your bio and photo (replace placeholder) |
+## Customize
 
-## Tech Stack
-
-- React 19 + Vite 8
-- Plain CSS (no UI framework—easy to customize)
-
----
-
-**MR Tax** — Chartered Tax Consultation & Advisory
+| File | Purpose |
+|------|---------|
+| `src/config/site.js` | Phone, email, brand name |
+| `public/logo.png` | Main logo |
+| `src/data/content.js` | Services, testimonials, FAQs |

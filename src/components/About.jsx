@@ -1,11 +1,13 @@
+import Logo from './Logo'
 import Icon from './Icon'
+import { SITE } from '../config/site'
 import './About.css'
 
 const highlights = [
-  'Member of the Institute of Chartered Accountants of India (ICAI)',
-  'Personalized strategy—not one-size-fits-all templates',
-  'Digital-first workflow with secure document handling',
-  'Dedicated support through notices, assessments, and appeals',
+  'Experienced civil and construction teams',
+  'Transparent BOQ and milestone-based billing',
+  'Quality materials from trusted suppliers',
+  'Dedicated project manager on every site',
 ]
 
 export default function About() {
@@ -14,29 +16,27 @@ export default function About() {
       <div className="container about">
         <div className="about__visual" data-reveal>
           <div className="about__image-wrap">
-            <div className="about__placeholder">
-              <span className="about__initials">MR</span>
-              <span className="about__ca-badge">CA</span>
+            <div className="about__logo-card">
+              <Logo size="lg" />
             </div>
             <div className="about__experience">
               <strong>12+</strong>
-              <span>Years of trusted practice</span>
+              <span>Years building trust</span>
             </div>
           </div>
         </div>
 
         <div className="about__content" data-reveal>
-          <span className="section__eyebrow">About MR Tax</span>
-          <h2 className="section__title">Your Chartered Accountant partner for every tax season</h2>
+          <span className="section__eyebrow">About {SITE.name}</span>
+          <h2 className="section__title">Your partner for construction that lasts</h2>
           <p className="about__lead">
-            MR Tax was founded on a simple belief: tax compliance should empower your financial
-            decisions—not create anxiety. As a practicing Chartered Accountant, I lead a team that
-            combines rigorous standards with approachable, transparent service.
+            {SITE.legalName} was built on a commitment to honest workmanship, clear communication,
+            and projects delivered on time and within agreed scope.
           </p>
           <p className="about__text">
-            Whether you are filing your first return, scaling a business, or navigating complex
-            cross-border income, we bring the discipline of audit-grade work and the warmth of a
-            long-term advisor relationship.
+            From dream homes to commercial complexes and infrastructure works, we bring planning
+            discipline, skilled labour, and site supervision so you can focus on your vision while
+            we handle the build.
           </p>
 
           <ul className="about__list">
@@ -49,7 +49,7 @@ export default function About() {
           </ul>
 
           <a href="#contact" className="btn btn--primary">
-            Schedule a Meeting
+            Discuss Your Project
           </a>
         </div>
       </div>

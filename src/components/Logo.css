@@ -1,0 +1,59 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.logo__img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo--preloader .logo__img {
+  max-height: 88px;
+  max-width: 260px;
+}
+
+.logo--sm .logo__img {
+  max-height: 40px;
+  max-width: 140px;
+}
+
+.logo--md .logo__img {
+  max-height: 52px;
+  max-width: 180px;
+}
+
+.logo--lg .logo__img {
+  max-height: 72px;
+  max-width: 240px;
+}
+
+.logo--xl .logo__img {
+  max-height: 100px;
+  max-width: 320px;
+}
+
+.logo--footer .logo__img {
+  max-height: 64px;
+  max-width: 200px;
+  filter: brightness(1.05);
+}
+
+.logo__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.navbar--scrolled .logo__img,
+.navbar__nav--open ~ * .logo__img {
+  max-height: 48px;
+}

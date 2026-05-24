@@ -1,127 +1,132 @@
 export const services = [
   {
-    icon: 'file',
-    title: 'Income Tax Filing',
-    description:
-      'Accurate ITR preparation and filing for salaried professionals, freelancers, and business owners with maximum lawful deductions.',
-  },
-  {
     icon: 'building',
-    title: 'Business Tax & GST',
+    title: 'Residential Construction',
     description:
-      'GST registration, returns, reconciliation, and corporate tax planning tailored to your industry and growth stage.',
-  },
-  {
-    icon: 'chart',
-    title: 'Tax Planning & Advisory',
-    description:
-      'Year-round strategies to reduce tax liability, optimize investments, and align finances with your personal and business goals.',
-  },
-  {
-    icon: 'shield',
-    title: 'Audit & Compliance',
-    description:
-      'Statutory audits, tax assessments support, and compliance reviews so you stay ahead of notices and penalties.',
+      'Quality homes, villas, and apartments built with modern design, durable materials, and on-time delivery.',
   },
   {
     icon: 'briefcase',
-    title: 'Startup & MSME Support',
+    title: 'Commercial Projects',
     description:
-      'Entity setup guidance, bookkeeping standards, and subsidy or scheme advisory for new and growing ventures.',
+      'Office spaces, retail complexes, and industrial sheds engineered for strength, safety, and long-term value.',
+  },
+  {
+    icon: 'chart',
+    title: 'Infrastructure Development',
+    description:
+      'Roads, layouts, drainage, and civil works executed with precision planning and regulatory compliance.',
+  },
+  {
+    icon: 'shield',
+    title: 'Renovation & Remodeling',
+    description:
+      'Transform existing structures with structural upgrades, interiors, and façade improvements.',
+  },
+  {
+    icon: 'file',
+    title: 'Project Management',
+    description:
+      'End-to-end supervision—budgeting, vendor coordination, quality checks, and milestone tracking.',
   },
   {
     icon: 'users',
-    title: 'NRI & Cross-Border Tax',
+    title: 'Real Estate Advisory',
     description:
-      'DTAA guidance, foreign income reporting, and residency planning for clients with international income streams.',
+      'Land sourcing, feasibility studies, approvals guidance, and investment-ready project consulting.',
   },
 ]
 
 export const stats = [
   { end: 12, suffix: '+', label: 'Years Experience' },
-  { end: 2500, suffix: '+', label: 'Returns Filed', format: true },
-  { end: 98, suffix: '%', label: 'Client Retention' },
-  { end: 24, suffix: 'h', label: 'Avg. Response Time' },
+  { end: 150, suffix: '+', label: 'Projects Delivered' },
+  { end: 98, suffix: '%', label: 'Client Satisfaction' },
+  { end: 2, suffix: 'M+', label: 'Sq. Ft. Constructed' },
 ]
 
 export const marqueeItems = [
-  'Income Tax Filing',
-  'GST Returns',
-  'Tax Planning',
-  'Startup Advisory',
-  'NRI Taxation',
-  'Audit Support',
-  'TDS Compliance',
-  'Business Registration',
+  'Residential Construction',
+  'Commercial Buildings',
+  'Infrastructure Works',
+  'Renovation',
+  'Project Management',
+  'Civil Contracting',
+  'Layout Development',
+  'Turnkey Solutions',
 ]
 
-export const heroWords = ['confident growth', 'maximum savings', 'full compliance', 'peace of mind']
+export const heroWords = ['lasting structures', 'smart infrastructure', 'quality builds', 'trusted delivery']
 
-export const certifications = ['ICAI Member', 'GST Practitioner', 'ISO-Ready Process', 'Secure & Confidential']
+export const certifications = [
+  'Licensed Contractors',
+  'Quality Materials',
+  'On-Time Delivery',
+  'Transparent Pricing',
+]
 
 export const processSteps = [
   {
     step: '01',
-    title: 'Free Consultation',
-    description: 'Share your situation. We assess scope, timelines, and documents needed—no obligation.',
+    title: 'Site Visit & Consultation',
+    description: 'We understand your vision, budget, and timeline—free initial consultation at your site or office.',
   },
   {
     step: '02',
-    title: 'Structured Plan',
-    description: 'You receive a clear fee quote and checklist so nothing is missed before we begin.',
+    title: 'Design & Estimate',
+    description: 'Detailed plans, BOQ, and transparent quotation so you know scope and cost before we break ground.',
   },
   {
     step: '03',
-    title: 'Expert Execution',
-    description: 'Our CA-led team handles filings, reviews, and compliance with full transparency.',
+    title: 'Construction Execution',
+    description: 'Skilled teams, quality materials, and regular progress updates through every project phase.',
   },
   {
     step: '04',
-    title: 'Ongoing Support',
-    description: 'Post-filing support, notice handling, and proactive reminders for the next cycle.',
+    title: 'Handover & Support',
+    description: 'Final inspection, documentation, and post-handover support for a worry-free experience.',
   },
 ]
 
 export const testimonials = [
   {
     quote:
-      'MR Tax simplified my business GST and year-end books. Professional, responsive, and always explains the why behind every decision.',
+      'MR NIRMAN delivered our commercial complex on schedule with excellent finishing. Professional team and clear communication throughout.',
     name: 'Rajesh K.',
-    role: 'Retail Business Owner',
+    role: 'Business Owner',
   },
   {
     quote:
-      'As an NRI, I was confused about Indian tax rules. They handled my return flawlessly and kept me compliant across borders.',
+      'Our home construction was stress-free—they handled permissions, materials, and quality checks. Highly recommend MR Nirman Infra.',
     name: 'Priya M.',
-    role: 'Software Professional, USA',
+    role: 'Homeowner',
   },
   {
     quote:
-      'Transparent pricing and zero last-minute panic during filing season. I recommend MR Tax to every founder in my network.',
+      'Transparent costing and no hidden surprises. They transformed our old building into a modern office space beautifully.',
     name: 'Amit S.',
-    role: 'Startup Founder',
+    role: 'Property Developer',
   },
 ]
 
 export const faqs = [
   {
-    question: 'Why choose a Chartered Accountant for tax filing?',
+    question: 'What types of projects does MR NIRMAN handle?',
     answer:
-      'A CA brings regulated expertise, ethical standards, and deep knowledge of tax law. You get accurate filings, better planning, and strong representation if authorities raise queries.',
+      'We handle residential, commercial, and infrastructure projects—including new construction, renovations, layouts, and turnkey developments across Andhra Pradesh and pan-India partnerships.',
   },
   {
-    question: 'What documents do I need for my first consultation?',
+    question: 'How do you provide project estimates?',
     answer:
-      'Typically PAN, prior year returns, Form 16 or profit statements, bank summaries, and investment proofs. We send a tailored checklist after understanding your profile.',
+      'After site visit and requirement discussion, we share a detailed estimate with scope, timeline, materials, and payment milestones—no hidden charges.',
   },
   {
-    question: 'Do you work with clients outside my city?',
+    question: 'Do you take projects outside my city?',
     answer:
-      'Yes. We serve clients pan-India through secure document sharing, video calls, and digital signatures—same quality as in-person engagement.',
+      'Yes. We undertake projects across multiple locations based on scope and feasibility. Contact us with your site details for assessment.',
   },
   {
-    question: 'How are your fees structured?',
+    question: 'What warranties or support do you offer?',
     answer:
-      'Fees depend on complexity—individual salaried returns start lower; business, audit, and advisory work are quoted upfront. No hidden charges.',
+      'We stand behind our workmanship with defined defect liability periods and responsive post-handover support as per your agreement.',
   },
 ]

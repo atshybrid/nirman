@@ -1,4 +1,5 @@
 import Icon from './Icon'
+import { SITE } from '../config/site'
 import './CtaBanner.css'
 
 export default function CtaBanner() {
@@ -6,20 +7,20 @@ export default function CtaBanner() {
     <section className="cta-banner">
       <div className="container cta-banner__inner" data-reveal>
         <div className="cta-banner__content">
-          <h2>Ready to file with confidence?</h2>
+          <h2>Ready to build with confidence?</h2>
           <p>
-            Join 2,500+ clients who trust MR Tax for accurate returns, proactive planning, and
-            year-round CA support.
+            Partner with {SITE.name} for quality construction, on-time delivery, and transparent
+            project management from foundation to handover.
           </p>
         </div>
         <div className="cta-banner__actions">
           <a href="#contact" className="btn btn--primary">
-            Book Free Consultation
+            Request a Quote
             <Icon name="arrow" size={18} />
           </a>
-          <a href="tel:+919876543210" className="btn btn--outline cta-banner__call">
+          <a href={`tel:${SITE.phoneTel}`} className="btn btn--outline cta-banner__call">
             <Icon name="phone" size={18} />
-            Call Now
+            {SITE.phoneDisplay}
           </a>
         </div>
       </div>

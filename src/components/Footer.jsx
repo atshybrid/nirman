@@ -1,3 +1,5 @@
+import Logo from './Logo'
+import { SITE } from '../config/site'
 import './Footer.css'
 
 export default function Footer() {
@@ -9,15 +11,11 @@ export default function Footer() {
         <div className="footer__top">
           <div className="footer__brand">
             <a href="#home" className="footer__logo-link">
-              <span className="footer__logo">MR</span>
-              <span>
-                <strong>MR Tax</strong>
-                <small>Chartered Tax Consultation</small>
-              </span>
+              <Logo size="footer" className="logo--footer" />
             </a>
             <p>
-              Professional tax filing, GST, and advisory services led by a qualified Chartered
-              Accountant. Your compliance partner for the long term.
+              {SITE.legalName} delivers trusted construction, infrastructure, and turnkey building
+              solutions with quality craftsmanship and transparent project management.
             </p>
           </div>
 
@@ -34,27 +32,26 @@ export default function Footer() {
             <div>
               <h4>Services</h4>
               <ul>
-                <li><a href="#services">Income Tax</a></li>
-                <li><a href="#services">GST & Business</a></li>
-                <li><a href="#services">Tax Planning</a></li>
-                <li><a href="#services">Audit Support</a></li>
+                <li><a href="#services">Residential</a></li>
+                <li><a href="#services">Commercial</a></li>
+                <li><a href="#services">Infrastructure</a></li>
+                <li><a href="#services">Renovation</a></li>
               </ul>
             </div>
             <div>
               <h4>Connect</h4>
               <ul>
-                <li><a href="tel:+919876543210">+91 98765 43210</a></li>
-                <li><a href="mailto:hello@mrtax.in">hello@mrtax.in</a></li>
+                <li><a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a></li>
+                <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
               </ul>
             </div>
           </nav>
         </div>
 
         <div className="footer__bottom">
-          <p>&copy; {year} MR Tax. All rights reserved.</p>
+          <p>&copy; {year} {SITE.name} Infra. All rights reserved.</p>
           <p className="footer__disclaimer">
-            Information on this site is general in nature and not legal or tax advice. Consult us
-            for guidance specific to your case.
+            Project timelines and costs vary by scope. Contact us for site-specific quotations.
           </p>
         </div>
       </div>

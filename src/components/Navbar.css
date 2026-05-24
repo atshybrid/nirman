@@ -24,55 +24,11 @@
 .navbar__brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   z-index: 1001;
 }
 
-.navbar__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
-  color: var(--color-gold);
-  font-weight: 700;
-  font-size: 0.875rem;
-  border-radius: var(--radius-sm);
-  letter-spacing: -0.02em;
-}
-
-.navbar--scrolled .navbar__logo,
-.navbar__nav--open ~ .navbar__toggle + .navbar__brand .navbar__logo {
-  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
-}
-
-.navbar__name {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-white);
-  line-height: 1.15;
-}
-
-.navbar--scrolled .navbar__name {
-  color: var(--color-navy);
-}
-
-.navbar__name small {
-  font-family: var(--font-sans);
-  font-size: 0.625rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-gold-light);
-  margin-top: 2px;
-}
-
-.navbar--scrolled .navbar__name small {
-  color: var(--color-teal);
+.navbar__brand .logo__img {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
 .navbar__nav {

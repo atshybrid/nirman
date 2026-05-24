@@ -8,10 +8,10 @@ export default function Services() {
       <div className="container">
         <header className="section__header" data-reveal>
           <span className="section__eyebrow">Our Services</span>
-          <h2 className="section__title">Complete tax & compliance under one roof</h2>
+          <h2 className="section__title">Complete construction solutions under one roof</h2>
           <p className="section__subtitle">
-            From individual returns to complex business advisory—every engagement is handled by
-            qualified professionals with clarity and care.
+            From homes to commercial complexes and civil works—every project is managed with
+            skilled teams, quality materials, and transparent communication.
           </p>
         </header>
 

@@ -1,12 +1,12 @@
 :root {
-  --color-navy: #0c1f3d;
-  --color-navy-light: #152d52;
-  --color-navy-dark: #071428;
-  --color-gold: #d4a853;
-  --color-gold-light: #e8c47a;
-  --color-gold-dark: #b8923f;
-  --color-teal: #1a8f8f;
-  --color-teal-light: #22b3b3;
+  --color-navy: #1a1a2e;
+  --color-navy-light: #2d2d44;
+  --color-navy-dark: #12121f;
+  --color-gold: #f5a623;
+  --color-gold-light: #ffc04d;
+  --color-gold-dark: #e8750a;
+  --color-teal: #e8750a;
+  --color-teal-light: #f5a623;
   --color-white: #ffffff;
   --color-off-white: #f7f9fc;
   --color-gray-100: #eef2f7;
@@ -14,7 +14,8 @@
   --color-gray-400: #8b9bb4;
   --color-gray-600: #5a6b85;
   --color-gray-800: #2d3a4f;
-  --color-success: #1d8a5c;
+  --color-success: #2d8a4e;
+  --color-orange: #e8750a;
   --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
   --shadow-sm: 0 2px 8px rgba(12, 31, 61, 0.06);

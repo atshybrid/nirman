@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Icon from './Icon'
+import { SITE } from '../config/site'
 import './Contact.css'
 
 const initialForm = {
@@ -31,10 +32,10 @@ export default function Contact() {
       <div className="container contact">
         <div className="contact__info" data-reveal>
           <span className="section__eyebrow">Get In Touch</span>
-          <h2 className="section__title">Book your free tax consultation</h2>
+          <h2 className="section__title">Start your project with MR NIRMAN</h2>
           <p className="contact__lead">
-            Tell us about your needs. We typically respond within one business day with next steps
-            and a transparent fee estimate.
+            Share your requirements. We respond within one business day with next steps and a
+            transparent project discussion.
           </p>
 
           <ul className="contact__details">
@@ -44,7 +45,7 @@ export default function Contact() {
               </span>
               <div>
                 <strong>Phone</strong>
-                <a href="tel:+919876543210">+91 98765 43210</a>
+                <a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a>
               </div>
             </li>
             <li>
@@ -53,7 +54,7 @@ export default function Contact() {
               </span>
               <div>
                 <strong>Email</strong>
-                <a href="mailto:hello@mrtax.in">hello@mrtax.in</a>
+                <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
               </div>
             </li>
             <li>
@@ -61,15 +62,15 @@ export default function Contact() {
                 <Icon name="location" size={22} />
               </span>
               <div>
-                <strong>Office</strong>
-                <span>Your City, India — Update with your address</span>
+                <strong>Service Area</strong>
+                <span>Andhra Pradesh &amp; pan-India projects</span>
               </div>
             </li>
           </ul>
 
           <div className="contact__hours">
             <strong>Office Hours</strong>
-            <p>Mon – Sat: 10:00 AM – 7:00 PM</p>
+            <p>Mon – Sat: 9:00 AM – 7:00 PM</p>
           </div>
         </div>
 
@@ -118,14 +119,14 @@ export default function Contact() {
               />
             </label>
             <label>
-              Service Needed
+              Project Type
               <select name="service" value={form.service} onChange={handleChange}>
-                <option value="">Select a service</option>
-                <option value="itr">Income Tax Filing</option>
-                <option value="gst">GST & Business Tax</option>
-                <option value="planning">Tax Planning</option>
-                <option value="audit">Audit & Compliance</option>
-                <option value="other">Other / Not Sure</option>
+                <option value="">Select project type</option>
+                <option value="residential">Residential Construction</option>
+                <option value="commercial">Commercial Building</option>
+                <option value="infra">Infrastructure / Civil</option>
+                <option value="renovation">Renovation</option>
+                <option value="other">Other</option>
               </select>
             </label>
           </div>
@@ -137,13 +138,12 @@ export default function Contact() {
               value={form.message}
               onChange={handleChange}
               rows={4}
-              placeholder="Briefly describe your requirement..."
+              placeholder="Site location, approximate area, timeline..."
             />
           </label>
 
           <button type="submit" className="btn btn--primary contact__submit">
-            Send Message
-            <Icon name="arrow" size={18} />
+            Send Enquiry
           </button>
         </form>
       </div>

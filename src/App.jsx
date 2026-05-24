@@ -9,7 +9,6 @@ import Certifications from './components/Certifications'
 import Services from './components/Services'
 import Stats from './components/Stats'
 import About from './components/About'
-import TaxCalculator from './components/TaxCalculator'
 import Process from './components/Process'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
@@ -43,7 +42,6 @@ function App() {
         <Services />
         <Stats />
         <About />
-        <TaxCalculator />
         <Process />
         <Testimonials />
         <FAQ />

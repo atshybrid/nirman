@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
+import Logo from './Logo'
 import './Navbar.css'
 
 const links = [
   { href: '#home', label: 'Home' },
   { href: '#services', label: 'Services' },
-  { href: '#calculator', label: 'Calculator' },
   { href: '#about', label: 'About' },
   { href: '#process', label: 'Process' },
+  { href: '#testimonials', label: 'Reviews' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -33,11 +34,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="container navbar__inner">
         <a href="#home" className="navbar__brand" onClick={closeMenu}>
-          <span className="navbar__logo">MR</span>
-          <span className="navbar__name">
-            Tax
-            <small>Chartered Accountants</small>
-          </span>
+          <Logo size="md" />
         </a>
 
         <nav className={`navbar__nav ${menuOpen ? 'navbar__nav--open' : ''}`} aria-label="Main">
@@ -51,7 +48,7 @@ export default function Navbar() {
             ))}
           </ul>
           <a href="#contact" className="btn btn--primary navbar__cta" onClick={closeMenu}>
-            Book Consultation
+            Get a Quote
           </a>
         </nav>
 

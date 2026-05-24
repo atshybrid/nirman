@@ -13,38 +13,11 @@
 }
 
 .footer__logo-link {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+  display: inline-flex;
   margin-bottom: 1rem;
-}
-
-.footer__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: var(--color-gold);
-  color: var(--color-navy-dark);
-  font-weight: 800;
-  font-size: 0.875rem;
-  border-radius: var(--radius-sm);
-}
-
-.footer__brand strong {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  color: var(--color-white);
-}
-
-.footer__brand small {
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-gold-light);
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-md);
 }
 
 .footer__brand p {

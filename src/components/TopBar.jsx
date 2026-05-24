@@ -6,10 +6,10 @@ export default function TopBar() {
       <div className="container topbar__inner">
         <p>
           <span className="topbar__pulse" />
-          ITR Filing Season FY 2025–26 — Book early &amp; avoid last-minute rush
+          New residential &amp; commercial projects now accepting enquiries
         </p>
         <a href="#contact" className="topbar__link">
-          Book Now →
+          Get Quote →
         </a>
       </div>
     </div>

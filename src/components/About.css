@@ -13,51 +13,27 @@
   position: relative;
 }
 
-.about__placeholder {
+.about__logo-card {
   aspect-ratio: 4 / 5;
   max-width: 380px;
   margin-inline: auto;
-  background: linear-gradient(160deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+  background: linear-gradient(160deg, #fff8f0 0%, #ffffff 100%);
+  border: 1px solid var(--color-gray-100);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
 }
 
-.about__placeholder::before {
+.about__logo-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(212, 168, 83, 0.25) 0%, transparent 50%);
-}
-
-.about__initials {
-  font-family: var(--font-display);
-  font-size: 5rem;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.15);
-  position: relative;
-  z-index: 1;
-}
-
-.about__ca-badge {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-gold);
-  color: var(--color-navy-dark);
-  font-weight: 800;
-  font-size: 1.125rem;
-  border-radius: 50%;
-  box-shadow: var(--shadow-md);
-  z-index: 2;
+  background: radial-gradient(circle at 30% 20%, rgba(245, 166, 35, 0.12) 0%, transparent 50%);
 }
 
 .about__experience {

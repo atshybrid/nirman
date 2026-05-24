@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Logo from './Logo'
 import './Preloader.css'
 
 export default function Preloader() {
@@ -6,8 +7,8 @@ export default function Preloader() {
   const [hide, setHide] = useState(false)
 
   useEffect(() => {
-    const t1 = setTimeout(() => setDone(true), 1200)
-    const t2 = setTimeout(() => setHide(true), 1600)
+    const t1 = setTimeout(() => setDone(true), 1400)
+    const t2 = setTimeout(() => setHide(true), 1800)
     return () => {
       clearTimeout(t1)
       clearTimeout(t2)
@@ -19,11 +20,10 @@ export default function Preloader() {
   return (
     <div className={`preloader ${done ? 'preloader--done' : ''}`} aria-hidden="true">
       <div className="preloader__inner">
-        <div className="preloader__logo">MR</div>
+        <Logo size="preloader" className="logo--preloader" />
         <div className="preloader__bar">
           <span />
         </div>
-        <p>MR Tax</p>
       </div>
     </div>
   )

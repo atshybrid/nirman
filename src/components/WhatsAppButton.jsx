@@ -1,14 +1,14 @@
+import { SITE } from '../config/site'
 import './WhatsAppButton.css'
 
-const PHONE = '919876543210'
 const MESSAGE = encodeURIComponent(
-  'Hi MR Tax, I would like to book a free tax consultation. Please share available slots.'
+  `Hi ${SITE.name}, I would like to discuss a construction/infrastructure project. Please contact me.`
 )
 
 export default function WhatsAppButton() {
   return (
     <a
-      href={`https://wa.me/${PHONE}?text=${MESSAGE}`}
+      href={`https://wa.me/${SITE.whatsapp}?text=${MESSAGE}`}
       className="whatsapp-btn"
       target="_blank"
       rel="noopener noreferrer"
