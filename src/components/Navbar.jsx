@@ -4,10 +4,11 @@ import './Navbar.css'
 
 const links = [
   { href: '#home', label: 'Home' },
+  { href: '#locations', label: 'Cities' },
   { href: '#services', label: 'Services' },
+  { href: '#green', label: 'Green Tech' },
+  { href: '#projects', label: 'Projects' },
   { href: '#about', label: 'About' },
-  { href: '#process', label: 'Process' },
-  { href: '#testimonials', label: 'Reviews' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -48,7 +49,7 @@ export default function Navbar() {
             ))}
           </ul>
           <a href="#contact" className="btn btn--primary navbar__cta" onClick={closeMenu}>
-            Get a Quote
+            Book Apartment
           </a>
         </nav>
 

@@ -1,6 +1,6 @@
 .stats {
-  background: var(--color-navy);
-  padding: 3rem 0;
+  background: linear-gradient(135deg, var(--color-gold-dark) 0%, var(--color-gold) 50%, var(--color-green-dark) 100%);
+  padding: 3.5rem 0;
 }
 
 .stats__grid {
@@ -14,16 +14,22 @@
   display: block;
   font-family: var(--font-display);
   font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 700;
-  color: var(--color-gold-light);
+  font-weight: 800;
+  color: var(--color-white);
   line-height: 1.1;
   margin-bottom: 0.35rem;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stats__value--text {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  letter-spacing: 0.05em;
 }
 
 .stats__label {
   font-size: 0.9375rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 768px) {

@@ -8,7 +8,7 @@ export default function MobileCTA() {
         Call Now
       </a>
       <a href="#contact" className="mobile-cta__btn mobile-cta__btn--book">
-        Get a Quote
+        Book Apartment
       </a>
     </div>
   )

@@ -4,39 +4,43 @@ import { SITE } from '../config/site'
 import './About.css'
 
 const highlights = [
-  'Experienced civil and construction teams',
-  'Transparent BOQ and milestone-based billing',
-  'Quality materials from trusted suppliers',
-  'Dedicated project manager on every site',
+  'Urban service apartments in Hyderabad & Bangalore',
+  'Green living & future technology in every master plan',
+  'Turnkey construction with transparent milestones',
+  'Managed stays for corporates, families & investors',
 ]
 
 export default function About() {
   return (
-    <section id="about" className="section">
+    <section id="about" className="section section--alt">
       <div className="container about">
         <div className="about__visual" data-reveal>
           <div className="about__image-wrap">
             <div className="about__logo-card">
               <Logo size="lg" />
+              <p className="about__logo-tagline">{SITE.tagline}</p>
             </div>
             <div className="about__experience">
               <strong>12+</strong>
-              <span>Years building trust</span>
+              <span>Years building futures</span>
             </div>
           </div>
         </div>
 
         <div className="about__content" data-reveal>
           <span className="section__eyebrow">About {SITE.name}</span>
-          <h2 className="section__title">Your partner for construction that lasts</h2>
+          <h2 className="section__title">
+            Construction company shaping urban India&apos;s next chapter
+          </h2>
           <p className="about__lead">
-            {SITE.legalName} was built on a commitment to honest workmanship, clear communication,
-            and projects delivered on time and within agreed scope.
+            {SITE.legalName} is not a consultancy—we are builders, developers, and operators of
+            urban service apartments and green living communities designed for Hyderabad and
+            Bangalore.
           </p>
           <p className="about__text">
-            From dream homes to commercial complexes and infrastructure works, we bring planning
-            discipline, skilled labour, and site supervision so you can focus on your vision while
-            we handle the build.
+            We combine premium construction quality with eco-conscious design and smart-home
+            technology, so residents and investors benefit from homes that are comfortable today
+            and ready for tomorrow.
           </p>
 
           <ul className="about__list">
@@ -49,7 +53,7 @@ export default function About() {
           </ul>
 
           <a href="#contact" className="btn btn--primary">
-            Discuss Your Project
+            Schedule a Visit
           </a>
         </div>
       </div>

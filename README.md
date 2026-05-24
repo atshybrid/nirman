@@ -1,35 +1,23 @@
-# MR NIRMAN Infra — Construction Website
+# MR NIRMAN Infra
 
-Responsive React website for **MR NIRMAN Infra** — construction, infrastructure, and turnkey building solutions.
+Advanced responsive website for **MR NIRMAN** — construction, urban service apartments, green living, and future technology in **Hyderabad** & **Bangalore**.
+
+**Tagline:** Building Trust, Creating Futures
 
 ## Contact
 
 - **Email:** info@mrnirmaninfra.com
 - **Phone:** +91 79977 78977
 
-## Quick Start
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build & Deploy
+## Deploy
 
-```bash
-npm run build
-```
+Push to `main` → GitHub Actions deploys to Pages.
 
-Pushes to `main` auto-deploy to GitHub Pages via Actions.
-
-**Live site:** https://atshybrid.github.io/nirman/
-
-(GitHub repo → Settings → Pages → Source: **GitHub Actions**)
-
-## Customize
-
-| File | Purpose |
-|------|---------|
-| `src/config/site.js` | Phone, email, brand name |
-| `public/logo.png` | Main logo |
-| `src/data/content.js` | Services, testimonials, FAQs |
+**Live:** https://atshybrid.github.io/nirman/

@@ -13,33 +13,34 @@ export default function Footer() {
             <a href="#home" className="footer__logo-link">
               <Logo size="footer" className="logo--footer" />
             </a>
+            <p className="footer__tagline">{SITE.tagline}</p>
             <p>
-              {SITE.legalName} delivers trusted construction, infrastructure, and turnkey building
-              solutions with quality craftsmanship and transparent project management.
+              {SITE.legalName} — urban service apartments, green living, and future-ready
+              construction in Hyderabad &amp; Bangalore.
             </p>
           </div>
 
           <nav className="footer__nav" aria-label="Footer">
             <div>
-              <h4>Quick Links</h4>
+              <h4>Explore</h4>
               <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#locations">Hyderabad</a></li>
+                <li><a href="#locations">Bangalore</a></li>
+                <li><a href="#green">Green Technology</a></li>
+                <li><a href="#projects">Projects</a></li>
               </ul>
             </div>
             <div>
               <h4>Services</h4>
               <ul>
-                <li><a href="#services">Residential</a></li>
-                <li><a href="#services">Commercial</a></li>
-                <li><a href="#services">Infrastructure</a></li>
-                <li><a href="#services">Renovation</a></li>
+                <li><a href="#services">Service Apartments</a></li>
+                <li><a href="#services">Green Living</a></li>
+                <li><a href="#services">Construction</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h4>Connect</h4>
+              <h4>Contact</h4>
               <ul>
                 <li><a href={`tel:${SITE.phoneTel}`}>{SITE.phoneDisplay}</a></li>
                 <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
@@ -51,7 +52,7 @@ export default function Footer() {
         <div className="footer__bottom">
           <p>&copy; {year} {SITE.name} Infra. All rights reserved.</p>
           <p className="footer__disclaimer">
-            Project timelines and costs vary by scope. Contact us for site-specific quotations.
+            RERA and local approvals apply per project. Images and features may vary by development.
           </p>
         </div>
       </div>

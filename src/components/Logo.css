@@ -36,6 +36,12 @@
   max-width: 320px;
 }
 
+.logo--hero .logo__img {
+  max-height: 140px;
+  max-width: 100%;
+  width: 100%;
+}
+
 .logo--footer .logo__img {
   max-height: 64px;
   max-width: 200px;

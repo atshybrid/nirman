@@ -7,7 +7,8 @@ const initialForm = {
   name: '',
   email: '',
   phone: '',
-  service: '',
+  city: '',
+  interest: '',
   message: '',
 }
 
@@ -28,14 +29,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section section--cream">
       <div className="container contact">
         <div className="contact__info" data-reveal>
           <span className="section__eyebrow">Get In Touch</span>
-          <h2 className="section__title">Start your project with MR NIRMAN</h2>
+          <h2 className="section__title">Book your apartment or project visit</h2>
           <p className="contact__lead">
-            Share your requirements. We respond within one business day with next steps and a
-            transparent project discussion.
+            Interested in urban service apartments, green living homes, or investment in Hyderabad
+            or Bangalore? Our team will respond within one business day.
           </p>
 
           <ul className="contact__details">
@@ -62,8 +63,8 @@ export default function Contact() {
                 <Icon name="location" size={22} />
               </span>
               <div>
-                <strong>Service Area</strong>
-                <span>Andhra Pradesh &amp; pan-India projects</span>
+                <strong>Cities</strong>
+                <span>Hyderabad · Bangalore</span>
               </div>
             </li>
           </ul>
@@ -77,59 +78,47 @@ export default function Contact() {
         <form className="contact__form" onSubmit={handleSubmit} data-reveal>
           {submitted && (
             <div className="contact__success" role="status">
-              Thank you! We will contact you shortly.
+              Thank you! Our team will contact you shortly.
             </div>
           )}
 
           <div className="contact__row">
             <label>
               Full Name *
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                required
-                placeholder="Your name"
-              />
+              <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="Your name" />
             </label>
             <label>
               Email *
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                required
-                placeholder="you@email.com"
-              />
+              <input type="email" name="email" value={form.email} onChange={handleChange} required placeholder="you@email.com" />
             </label>
           </div>
 
           <div className="contact__row">
             <label>
               Phone *
-              <input
-                type="tel"
-                name="phone"
-                value={form.phone}
-                onChange={handleChange}
-                required
-                placeholder="+91 XXXXX XXXXX"
-              />
+              <input type="tel" name="phone" value={form.phone} onChange={handleChange} required placeholder="+91 XXXXX XXXXX" />
             </label>
             <label>
-              Project Type
-              <select name="service" value={form.service} onChange={handleChange}>
-                <option value="">Select project type</option>
-                <option value="residential">Residential Construction</option>
-                <option value="commercial">Commercial Building</option>
-                <option value="infra">Infrastructure / Civil</option>
-                <option value="renovation">Renovation</option>
-                <option value="other">Other</option>
+              Preferred City *
+              <select name="city" value={form.city} onChange={handleChange} required>
+                <option value="">Select city</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="both">Both / Undecided</option>
               </select>
             </label>
           </div>
+
+          <label>
+            I am interested in
+            <select name="interest" value={form.interest} onChange={handleChange}>
+              <option value="">Select option</option>
+              <option value="apartment">Urban Service Apartment</option>
+              <option value="green">Green Living Home</option>
+              <option value="invest">Investment / Partnership</option>
+              <option value="construction">Custom Construction</option>
+            </select>
+          </label>
 
           <label>
             Message
@@ -138,12 +127,12 @@ export default function Contact() {
               value={form.message}
               onChange={handleChange}
               rows={4}
-              placeholder="Site location, approximate area, timeline..."
+              placeholder="Tell us about your requirements, budget, or timeline..."
             />
           </label>
 
           <button type="submit" className="btn btn--primary contact__submit">
-            Send Enquiry
+            Submit Enquiry
           </button>
         </form>
       </div>

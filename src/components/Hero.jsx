@@ -1,4 +1,5 @@
 import { heroWords } from '../data/content'
+import { SITE } from '../config/site'
 import { useRotatingText } from '../hooks/useRotatingText'
 import Logo from './Logo'
 import Icon from './Icon'
@@ -10,100 +11,98 @@ export default function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero__bg" aria-hidden="true">
-        <div className="hero__gradient" />
+        <div className="hero__mesh" />
         <div className="hero__grid" />
-        <div className="hero__orb hero__orb--1" />
-        <div className="hero__orb hero__orb--2" />
-        <div className="hero__orb hero__orb--3" />
+        <div className="hero__glow hero__glow--gold" />
+        <div className="hero__glow hero__glow--green" />
       </div>
 
-      <div className="container hero__content">
-        <div className="hero__text" data-reveal>
-          <div className="hero__badge">
-            <span className="hero__badge-dot" />
-            Construction &amp; Infrastructure Experts
+      <div className="container hero__layout">
+        <div className="hero__content" data-reveal>
+          <div className="hero__cities">
+            {SITE.cities.map((city) => (
+              <span key={city} className="hero__city-pill">
+                <Icon name="location" size={14} />
+                {city}
+              </span>
+            ))}
           </div>
 
+          <p className="hero__tagline">{SITE.tagline}</p>
+
           <h1 className="hero__title">
-            Building{' '}
-            <span className={`hero__title-accent hero__rotate ${visible ? 'hero__rotate--in' : 'hero__rotate--out'}`}>
+            Urban service apartments &amp;{' '}
+            <span className={`hero__accent ${visible ? 'hero__accent--in' : 'hero__accent--out'}`}>
               {word}
             </span>
           </h1>
 
-          <p className="hero__description">
-            MR NIRMAN Infra delivers residential, commercial, and civil projects with quality
-            materials, skilled execution, and transparent timelines—trusted across Andhra Pradesh
-            and beyond.
+          <p className="hero__desc">
+            MR NIRMAN builds and manages future-ready homes in Hyderabad and Bangalore—combining
+            premium construction, green living design, and smart technology for modern India.
           </p>
 
           <div className="hero__actions">
             <a href="#contact" className="btn btn--primary">
-              Get Free Quote
+              Book a Site Visit
               <Icon name="arrow" size={18} />
             </a>
-            <a href="#services" className="btn btn--secondary">
-              Our Services
+            <a href="#green" className="btn btn--green">
+              Green Living Tech
             </a>
           </div>
 
-          <ul className="hero__trust">
-            <li>
-              <Icon name="check" size={18} />
-              Licensed &amp; Insured
-            </li>
-            <li>
-              <Icon name="check" size={18} />
-              Quality Materials
-            </li>
-            <li>
-              <Icon name="check" size={18} />
-              On-Time Delivery
-            </li>
-          </ul>
+          <div className="hero__features">
+            <div className="hero__feature">
+              <span className="hero__feature-icon">🌿</span>
+              <div>
+                <strong>Green Living</strong>
+                <span>Eco-first design</span>
+              </div>
+            </div>
+            <div className="hero__feature">
+              <span className="hero__feature-icon">🏢</span>
+              <div>
+                <strong>Service Apartments</strong>
+                <span>Managed urban stays</span>
+              </div>
+            </div>
+            <div className="hero__feature">
+              <span className="hero__feature-icon">⚡</span>
+              <div>
+                <strong>Smart Technology</strong>
+                <span>Future-ready homes</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="hero__card" data-reveal>
-          <div className="hero__logo-wrap">
-            <Logo size="xl" />
+        <div className="hero__visual" data-reveal>
+          <div className="hero__logo-card">
+            <Logo size="hero" />
           </div>
-          <div className="hero__card-inner">
-            <div className="hero__card-header">
-              <span>Project Snapshot</span>
-              <span className="hero__card-tag hero__card-tag--live">Active Builds</span>
+          <div className="hero__card">
+            <div className="hero__card-top">
+              <span>Live Portfolio</span>
+              <span className="hero__live">● Planning 2025–26</span>
             </div>
-            <div className="hero__card-chart">
-              <div className="hero__bar" style={{ '--h': '55%' }} />
-              <div className="hero__bar" style={{ '--h': '72%' }} />
-              <div className="hero__bar hero__bar--highlight" style={{ '--h': '92%' }} />
-              <div className="hero__bar" style={{ '--h': '68%' }} />
-              <div className="hero__bar" style={{ '--h': '48%' }} />
-            </div>
-            <div className="hero__card-stats">
-              <div>
-                <strong>150+</strong>
-                <span>Projects delivered</span>
-              </div>
-              <div>
-                <strong>98%</strong>
-                <span>Client satisfaction</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="hero__float hero__float--1">
-            <Icon name="building" size={22} />
-            <div>
-              <strong>Turnkey Builds</strong>
-              <span>End-to-end delivery</span>
-            </div>
-          </div>
-          <div className="hero__float hero__float--2">
-            <Icon name="shield" size={22} />
-            <div>
-              <strong>Quality Assured</strong>
-              <span>Structured QC</span>
-            </div>
+            <ul className="hero__card-list">
+              <li>
+                <strong>Hyderabad</strong>
+                <span>Urban service apartments</span>
+              </li>
+              <li>
+                <strong>Bangalore</strong>
+                <span>Green smart residences</span>
+              </li>
+              <li>
+                <strong>Technology</strong>
+                <span>IoT · Solar · EV-ready</span>
+              </li>
+            </ul>
+            <a href="#projects" className="hero__card-link">
+              View projects →
+            </a>
           </div>
         </div>
       </div>

@@ -32,9 +32,9 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: var(--color-off-white);
+  background: var(--color-green-muted);
   border-radius: var(--radius-sm);
-  color: var(--color-teal);
+  color: var(--color-green-dark);
   flex-shrink: 0;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .contact__details a:hover {
-  color: var(--color-teal);
+  color: var(--color-gold-dark);
 }
 
 .contact__hours {

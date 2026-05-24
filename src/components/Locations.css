@@ -1,0 +1,108 @@
+.locations__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.locations__card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.locations__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-green));
+}
+
+.locations__card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.locations__card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  color: var(--color-gold-dark);
+}
+
+.locations__status {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.75rem;
+  background: var(--color-green-muted);
+  color: var(--color-green-dark);
+  border-radius: 100px;
+}
+
+.locations__card h3 {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 0.25rem;
+}
+
+.locations__region {
+  font-size: 0.875rem;
+  color: var(--color-gray-400);
+  margin-bottom: 1rem;
+}
+
+.locations__desc {
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.locations__highlights {
+  margin-bottom: 1.5rem;
+}
+
+.locations__highlights li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-gray-800);
+  margin-bottom: 0.5rem;
+}
+
+.locations__highlights svg {
+  color: var(--color-green-dark);
+  flex-shrink: 0;
+}
+
+.locations__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-gold-dark);
+  transition: gap var(--transition);
+}
+
+.locations__cta:hover {
+  gap: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .locations__grid {
+    grid-template-columns: 1fr;
+  }
+}

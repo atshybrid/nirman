@@ -7,10 +7,10 @@ export default function Process() {
       <div className="container">
         <header className="section__header" data-reveal>
           <span className="section__eyebrow">How We Work</span>
-          <h2 className="section__title">A clear, stress-free process</h2>
+          <h2 className="section__title">From enquiry to your new urban home</h2>
           <p className="section__subtitle">
-            From first site visit to final handover—we keep you informed at every step with clear
-            milestones and quality checks.
+            Whether you book a service apartment or invest in a green living project—we guide you
+            with clarity from first visit to keys in hand.
           </p>
         </header>
 

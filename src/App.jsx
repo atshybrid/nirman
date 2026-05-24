@@ -5,8 +5,10 @@ import ScrollProgress from './components/ScrollProgress'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Marquee from './components/Marquee'
-import Certifications from './components/Certifications'
+import Locations from './components/Locations'
 import Services from './components/Services'
+import GreenTech from './components/GreenTech'
+import Projects from './components/Projects'
 import Stats from './components/Stats'
 import About from './components/About'
 import Process from './components/Process'
@@ -38,8 +40,10 @@ function App() {
       <main>
         <Hero />
         <Marquee />
-        <Certifications />
+        <Locations />
         <Services />
+        <GreenTech />
+        <Projects />
         <Stats />
         <About />
         <Process />

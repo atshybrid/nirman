@@ -1,132 +1,209 @@
 export const services = [
   {
     icon: 'building',
-    title: 'Residential Construction',
+    title: 'Urban Service Apartments',
     description:
-      'Quality homes, villas, and apartments built with modern design, durable materials, and on-time delivery.',
-  },
-  {
-    icon: 'briefcase',
-    title: 'Commercial Projects',
-    description:
-      'Office spaces, retail complexes, and industrial sheds engineered for strength, safety, and long-term value.',
-  },
-  {
-    icon: 'chart',
-    title: 'Infrastructure Development',
-    description:
-      'Roads, layouts, drainage, and civil works executed with precision planning and regulatory compliance.',
+      'Premium serviced apartments in Hyderabad and Bangalore—fully furnished, managed living for professionals, families, and long-stay guests.',
   },
   {
     icon: 'shield',
-    title: 'Renovation & Remodeling',
+    title: 'Green Living Communities',
     description:
-      'Transform existing structures with structural upgrades, interiors, and façade improvements.',
+      'Eco-conscious layouts with rainwater harvesting, solar readiness, native landscaping, and low-carbon material choices.',
+  },
+  {
+    icon: 'chart',
+    title: 'Smart Building Technology',
+    description:
+      'IoT-enabled access, energy monitoring, EV-ready parking, and future-ready infrastructure for modern urban life.',
+  },
+  {
+    icon: 'briefcase',
+    title: 'Commercial & Mixed-Use',
+    description:
+      'Office floors, retail podiums, and co-living spaces designed for connectivity, compliance, and long-term asset value.',
   },
   {
     icon: 'file',
-    title: 'Project Management',
+    title: 'Turnkey Construction',
     description:
-      'End-to-end supervision—budgeting, vendor coordination, quality checks, and milestone tracking.',
+      'End-to-end civil, structural, MEP, and interiors—from approvals and BOQ to handover with milestone transparency.',
   },
   {
     icon: 'users',
-    title: 'Real Estate Advisory',
+    title: 'Property & Investment Advisory',
     description:
-      'Land sourcing, feasibility studies, approvals guidance, and investment-ready project consulting.',
+      'Site selection, feasibility, and partnership models for investors entering Hyderabad and Bangalore growth corridors.',
   },
 ]
 
 export const stats = [
-  { end: 12, suffix: '+', label: 'Years Experience' },
-  { end: 150, suffix: '+', label: 'Projects Delivered' },
-  { end: 98, suffix: '%', label: 'Client Satisfaction' },
-  { end: 2, suffix: 'M+', label: 'Sq. Ft. Constructed' },
+  { end: 12, suffix: '+', label: 'Years of Excellence' },
+  { staticValue: 'HYD · BLR', label: 'Metro Cities Served' },
+  { end: 85, suffix: '%', label: 'Green Design Score' },
+  { end: 40, suffix: '+', label: 'Smart Features / Project' },
 ]
 
 export const marqueeItems = [
-  'Residential Construction',
-  'Commercial Buildings',
-  'Infrastructure Works',
-  'Renovation',
-  'Project Management',
-  'Civil Contracting',
-  'Layout Development',
-  'Turnkey Solutions',
+  'Urban Service Apartments',
+  'Hyderabad',
+  'Bangalore',
+  'Green Living',
+  'Smart Homes',
+  'Solar Ready',
+  'Rainwater Harvesting',
+  'Future Technology',
+  'Turnkey Construction',
+  'Building Trust',
 ]
 
-export const heroWords = ['lasting structures', 'smart infrastructure', 'quality builds', 'trusted delivery']
+export const heroWords = [
+  'green urban living',
+  'smart apartments',
+  'trusted construction',
+  'future-ready homes',
+]
 
 export const certifications = [
-  'Licensed Contractors',
-  'Quality Materials',
-  'On-Time Delivery',
-  'Transparent Pricing',
+  'RERA-Aligned Processes',
+  'Green Building Practices',
+  'Smart Home Ready',
+  'Hyderabad & Bangalore',
+]
+
+export const locations = [
+  {
+    city: 'Hyderabad',
+    region: 'Telangana',
+    description:
+      'Growing IT and pharma corridors with strong rental demand—ideal for serviced apartments and mixed-use developments.',
+    highlights: ['Gachibowli & Financial District', 'Metro-connected zones', 'Premium rental yields'],
+    status: 'Active Projects',
+  },
+  {
+    city: 'Bangalore',
+    region: 'Karnataka',
+    description:
+      'India’s tech capital—high demand for quality urban housing, co-living, and sustainable residential towers.',
+    highlights: ['Whitefield & ORR belt', 'Startup & IT workforce', 'Green-certified planning'],
+    status: 'Expanding Portfolio',
+  },
+]
+
+export const greenFeatures = [
+  {
+    icon: 'sun',
+    title: 'Solar & Energy Efficiency',
+    description: 'Rooftop solar readiness, LED systems, and insulated envelopes to cut lifetime energy use.',
+  },
+  {
+    icon: 'water',
+    title: 'Water Stewardship',
+    description: 'Rainwater harvesting, STP integration, and low-flow fixtures for responsible consumption.',
+  },
+  {
+    icon: 'leaf',
+    title: 'Biophilic Design',
+    description: 'Courtyards, terrace gardens, and native planting for healthier indoor-outdoor living.',
+  },
+  {
+    icon: 'smart',
+    title: 'Connected Living',
+    description: 'App-based access, smart meters, and EV charging infrastructure across our developments.',
+  },
+]
+
+export const projects = [
+  {
+    name: 'Nirman Urban Suites',
+    location: 'Hyderabad',
+    type: 'Service Apartments',
+    status: 'Under Development',
+    tags: ['Smart Access', 'Green Roof', 'Furnished'],
+  },
+  {
+    name: 'Green Horizon Residences',
+    location: 'Bangalore',
+    type: 'Sustainable Living',
+    status: 'Planning',
+    tags: ['Solar Ready', 'Rainwater', 'EV Parking'],
+  },
+  {
+    name: 'MR NIRMAN Central',
+    location: 'Hyderabad',
+    type: 'Mixed-Use',
+    status: 'Concept',
+    tags: ['Retail + Living', 'Future Tech', 'Metro Proximity'],
+  },
 ]
 
 export const processSteps = [
   {
     step: '01',
-    title: 'Site Visit & Consultation',
-    description: 'We understand your vision, budget, and timeline—free initial consultation at your site or office.',
+    title: 'Discover & Consult',
+    description:
+      'Share your needs—apartment booking, investment, or custom build. We align on location, budget, and timeline.',
   },
   {
     step: '02',
-    title: 'Design & Estimate',
-    description: 'Detailed plans, BOQ, and transparent quotation so you know scope and cost before we break ground.',
+    title: 'Design & Green Plan',
+    description:
+      'Layouts, sustainability features, and smart-tech specs documented with transparent BOQ and milestones.',
   },
   {
     step: '03',
-    title: 'Construction Execution',
-    description: 'Skilled teams, quality materials, and regular progress updates through every project phase.',
+    title: 'Build & Integrate',
+    description:
+      'Construction, MEP, interiors, and technology integration with on-site QC and progress reporting.',
   },
   {
     step: '04',
-    title: 'Handover & Support',
-    description: 'Final inspection, documentation, and post-handover support for a worry-free experience.',
+    title: 'Handover & Live',
+    description:
+      'Move-in ready apartments, property manuals, and ongoing facility support for residents and investors.',
   },
 ]
 
 export const testimonials = [
   {
     quote:
-      'MR NIRMAN delivered our commercial complex on schedule with excellent finishing. Professional team and clear communication throughout.',
-    name: 'Rajesh K.',
-    role: 'Business Owner',
+      'MR NIRMAN’s Hyderabad service apartments exceeded expectations—modern, green-focused, and professionally managed. Perfect for our team’s long stays.',
+    name: 'Vikram R.',
+    role: 'Corporate HR Head',
   },
   {
     quote:
-      'Our home construction was stress-free—they handled permissions, materials, and quality checks. Highly recommend MR Nirman Infra.',
-    name: 'Priya M.',
-    role: 'Homeowner',
+      'Their Bangalore project vision combines smart tech with real sustainability—not just marketing. We’re proud to be early partners.',
+    name: 'Ananya S.',
+    role: 'Real Estate Investor',
   },
   {
     quote:
-      'Transparent costing and no hidden surprises. They transformed our old building into a modern office space beautifully.',
-    name: 'Amit S.',
-    role: 'Property Developer',
+      'From first site visit to handover, communication was clear. The green living features genuinely reduce our monthly utilities.',
+    name: 'Mohammed K.',
+    role: 'Resident & Homeowner',
   },
 ]
 
 export const faqs = [
   {
-    question: 'What types of projects does MR NIRMAN handle?',
+    question: 'What are urban service apartments?',
     answer:
-      'We handle residential, commercial, and infrastructure projects—including new construction, renovations, layouts, and turnkey developments across Andhra Pradesh and pan-India partnerships.',
+      'Fully managed, furnished apartments for medium to long stays—ideal for professionals, relocating families, and corporate housing. MR NIRMAN offers these in Hyderabad and Bangalore with hotel-like services and home-like comfort.',
   },
   {
-    question: 'How do you provide project estimates?',
+    question: 'Where are your current projects?',
     answer:
-      'After site visit and requirement discussion, we share a detailed estimate with scope, timeline, materials, and payment milestones—no hidden charges.',
+      'We are actively developing and planning projects in Hyderabad and Bangalore, with a focus on metro-connected, high-growth corridors. Contact us for the latest availability and launch timelines.',
   },
   {
-    question: 'Do you take projects outside my city?',
+    question: 'What does “green living future technology” mean?',
     answer:
-      'Yes. We undertake projects across multiple locations based on scope and feasibility. Contact us with your site details for assessment.',
+      'We integrate eco-design (water, energy, landscaping) with smart building tech (access control, monitoring, EV readiness) so your home is sustainable today and adaptable for tomorrow.',
   },
   {
-    question: 'What warranties or support do you offer?',
+    question: 'How can I book or invest?',
     answer:
-      'We stand behind our workmanship with defined defect liability periods and responsive post-handover support as per your agreement.',
+      'Call +91 79977 78977 or email info@mrnirmaninfra.com. We’ll schedule a consultation, share project details, and guide you through booking or partnership options.',
   },
 ]

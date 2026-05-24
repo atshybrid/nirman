@@ -1,3 +1,4 @@
+import { SITE } from '../config/site'
 import './TopBar.css'
 
 export default function TopBar() {
@@ -6,10 +7,10 @@ export default function TopBar() {
       <div className="container topbar__inner">
         <p>
           <span className="topbar__pulse" />
-          New residential &amp; commercial projects now accepting enquiries
+          Urban service apartments now in {SITE.cities.join(' & ')} — Green living · Smart technology
         </p>
         <a href="#contact" className="topbar__link">
-          Get Quote →
+          Enquire Now →
         </a>
       </div>
     </div>

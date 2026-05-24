@@ -20,6 +20,15 @@
   border-radius: var(--radius-md);
 }
 
+.footer__tagline {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-bottom: 0.75rem;
+}
+
 .footer__brand p {
   font-size: 0.875rem;
   line-height: 1.7;

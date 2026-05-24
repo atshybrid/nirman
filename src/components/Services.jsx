@@ -4,14 +4,14 @@ import './Services.css'
 
 export default function Services() {
   return (
-    <section id="services" className="section section--alt">
+    <section id="services" className="section section--dark">
       <div className="container">
         <header className="section__header" data-reveal>
-          <span className="section__eyebrow">Our Services</span>
-          <h2 className="section__title">Complete construction solutions under one roof</h2>
+          <span className="section__eyebrow">What We Offer</span>
+          <h2 className="section__title">Construction &amp; urban living solutions</h2>
           <p className="section__subtitle">
-            From homes to commercial complexes and civil works—every project is managed with
-            skilled teams, quality materials, and transparent communication.
+            From serviced apartments to green smart communities—everything you need for modern
+            living in Hyderabad and Bangalore.
           </p>
         </header>
 

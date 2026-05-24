@@ -76,6 +76,34 @@ const paths = {
   arrow: (
     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
   ),
+  sun: (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+    />
+  ),
+  water: (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M12 3c-4 6-6 9-6 12a6 6 0 1012 0c0-3-2-6-6-12z"
+    />
+  ),
+  leaf: (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M5 19c5-8 8-11 14-14-2 6-2 10 2 14-4-2-8-4-14 0z"
+    />
+  ),
+  smart: (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+    />
+  ),
 }
 
 export default function Icon({ name, size = 24, className = '' }) {
