@@ -9,7 +9,7 @@ export default function Hero() {
   const { word, visible } = useRotatingText(heroWords)
 
   return (
-    <section id="home" className="hero">
+    <section id="home" className="hero" aria-label="MR NIRMAN Infra - Urban apartments and green construction">
       <div className="hero__bg" aria-hidden="true">
         <div className="hero__mesh" />
         <div className="hero__grid" />

@@ -28,33 +28,39 @@
   transition: var(--transition);
 }
 
-.faq__item--open {
-  border-color: var(--color-teal);
+.faq__item[open] {
+  border-color: var(--color-green-dark);
   box-shadow: var(--shadow-sm);
 }
 
 .faq__question {
-  width: 100%;
+  padding: 1.125rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  cursor: pointer;
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1.125rem 1.25rem;
-  text-align: left;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--color-navy);
 }
 
-.faq__chevron {
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq__question::after {
+  content: '+';
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-gold-dark);
   flex-shrink: 0;
-  color: var(--color-gray-400);
   transition: transform var(--transition);
 }
 
-.faq__item--open .faq__chevron {
-  transform: rotate(180deg);
-  color: var(--color-teal);
+.faq__item[open] .faq__question::after {
+  content: '−';
 }
 
 .faq__answer {

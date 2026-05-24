@@ -1,43 +1,37 @@
-import { useState } from 'react'
 import { faqs } from '../data/content'
-import Icon from './Icon'
 import './FAQ.css'
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(0)
-
   return (
-    <section id="faq" className="section section--alt">
+    <section id="faq" className="section section--alt" aria-labelledby="faq-heading">
       <div className="container faq">
         <header className="faq__header" data-reveal>
           <span className="section__eyebrow">FAQ</span>
-          <h2 className="section__title">Common questions answered</h2>
+          <h2 id="faq-heading" className="section__title">
+            Frequently asked questions
+          </h2>
           <p className="section__subtitle">
-            Still unsure? Reach out—we are happy to discuss your specific situation in a free
-            consultation.
+            Answers about our urban service apartments, green living projects, and construction
+            services in Hyderabad and Bangalore.
           </p>
         </header>
 
-        <div className="faq__list" data-reveal>
-          {faqs.map((item, i) => {
-            const isOpen = openIndex === i
-            return (
-              <div key={item.question} className={`faq__item ${isOpen ? 'faq__item--open' : ''}`}>
-                <button
-                  type="button"
-                  className="faq__question"
-                  aria-expanded={isOpen}
-                  onClick={() => setOpenIndex(isOpen ? -1 : i)}
-                >
-                  {item.question}
-                  <Icon name="chevron" size={20} className="faq__chevron" />
-                </button>
-                <div className="faq__answer" hidden={!isOpen}>
-                  <p>{item.answer}</p>
-                </div>
+        <div className="faq__list" data-reveal itemScope itemType="https://schema.org/FAQPage">
+          {faqs.map((item) => (
+            <details key={item.question} className="faq__item" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <summary className="faq__question" itemProp="name">
+                {item.question}
+              </summary>
+              <div
+                className="faq__answer"
+                itemScope
+                itemProp="acceptedAnswer"
+                itemType="https://schema.org/Answer"
+              >
+                <p itemProp="text">{item.answer}</p>
               </div>
-            )
-          })}
+            </details>
+          ))}
         </div>
       </div>
     </section>

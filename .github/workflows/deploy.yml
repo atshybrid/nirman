@@ -29,6 +29,7 @@ jobs:
       - run: npm run build
         env:
           GITHUB_ACTIONS: true
+          VITE_SITE_URL: https://atshybrid.github.io/nirman
 
       - uses: actions/upload-pages-artifact@v3
         with:

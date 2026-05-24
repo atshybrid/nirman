@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import SeoHead from './components/SeoHead'
+import SkipLink from './components/SkipLink'
 import Preloader from './components/Preloader'
 import TopBar from './components/TopBar'
 import ScrollProgress from './components/ScrollProgress'
@@ -33,11 +35,13 @@ function App() {
 
   return (
     <>
+      <SeoHead />
+      <SkipLink />
       <Preloader />
       <ScrollProgress />
       <TopBar />
       <Navbar />
-      <main>
+      <main id="main-content" role="main">
         <Hero />
         <Marquee />
         <Locations />

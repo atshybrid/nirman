@@ -1,0 +1,18 @@
+{
+  "name": "MR NIRMAN Infra",
+  "short_name": "MR NIRMAN",
+  "description": "Urban service apartments, green living, and construction in Hyderabad & Bangalore.",
+  "start_url": "/nirman/",
+  "display": "standalone",
+  "background_color": "#0d0d12",
+  "theme_color": "#0d0d12",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/nirman/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

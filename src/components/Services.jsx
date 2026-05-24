@@ -4,11 +4,13 @@ import './Services.css'
 
 export default function Services() {
   return (
-    <section id="services" className="section section--dark">
+    <section id="services" className="section section--dark" aria-labelledby="services-heading">
       <div className="container">
         <header className="section__header" data-reveal>
           <span className="section__eyebrow">What We Offer</span>
-          <h2 className="section__title">Construction &amp; urban living solutions</h2>
+          <h2 id="services-heading" className="section__title">
+            Construction &amp; urban living solutions
+          </h2>
           <p className="section__subtitle">
             From serviced apartments to green smart communities—everything you need for modern
             living in Hyderabad and Bangalore.
